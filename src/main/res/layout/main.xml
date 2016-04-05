@@ -4,10 +4,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, App1Activity"
+<samik.app1.App1GLSurfaceView android:id="@+id/app1_gl_surface_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     />
 </LinearLayout>
 
