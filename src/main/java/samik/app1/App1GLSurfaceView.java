@@ -12,7 +12,9 @@ class App1GLSurfaceView extends GLSurfaceView {
 	public App1GLSurfaceView(Context ctx, AttributeSet attrs) {
 		super(ctx, attrs);
 		setEGLContextClientVersion(2);
-		app1GLRenderer = new App1GLRenderer();
+		String vShader = ctx.getString(R.string.app1_vertex_shader);
+		String fShader = ctx.getString(R.string.app1_fragment_shader);
+		app1GLRenderer = new App1GLRenderer(vShader, fShader);
 		setRenderer(app1GLRenderer);
 		setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 	}
