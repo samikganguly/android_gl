@@ -178,7 +178,7 @@ public class App1GLRenderer implements GLSurfaceView.Renderer {
 			| GLES20.GL_DEPTH_BUFFER_BIT);
 		Log.d(logTag, "DRAWING, GL code=0x" + 
 			Integer.toHexString(GLES20.glGetError()));
-		GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, 12);
+		GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, 36);
 	}
 	//called when viewport is resized
 	@Override
